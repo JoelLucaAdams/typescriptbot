@@ -2,7 +2,7 @@ import { Command } from './commands';
 
 export const testCommand: Command = {
     name: 'test',
-    aliases: ['t'],
+    aliases: 't',
     description: 'test',
     run: async (client, message, args) => {
         args?.shift();

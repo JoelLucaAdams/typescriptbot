@@ -2,7 +2,7 @@ import { Command } from './commands';
 
 export const pingCommand: Command = {
     name: 'ping',
-    aliases: ['p'],
+    aliases: 'p',
     description: 'Checks to see if the bot is alive',
     run: async (client, message, args) => {
         var start = new Date().getTime();

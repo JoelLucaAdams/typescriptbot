@@ -17,10 +17,12 @@ export function messageHandler(message: Message) {
 
     switch(commandName)
     {
-        case pingCommand.name || pingCommand.aliases:
+        case pingCommand.name:
+        case pingCommand.aliases: 
             pingCommand.run(client, message);
             break;
-        case testCommand.name || testCommand.aliases:
+        case testCommand.name:
+        case testCommand.aliases:
             testCommand.run(client, message, args);
     }
 }
